@@ -1,0 +1,183 @@
+{
+  "userInfo": {
+    "id": "832db314-7a43-4977-8896-a5ded21bf22e",
+    "username": "admin",
+    "password": "123456",
+    "phone": "15115789426",
+    "create_time": "2022-12-10T10:41:32.000Z",
+    "roles": [
+      {
+        "id": "badb0904-fb29-4dc3-a4f2-0b67d54bd5dc",
+        "rolename": "root",
+        "desc": "最高管理员",
+        "create_time": "2023-03-23T04:53:32.808Z"
+      }
+    ]
+  },
+  "roleList": ["root"],
+  "token": "这是一个模拟token",
+  "menuList": [
+    {
+      "id": "f2f70b66-e773-4856-af4e-3949e1981d3d",
+      "pid": "0",
+      "menuname": "引导页",
+      "icon": "ele-Promotion",
+      "path": "/guidance",
+      "create_time": "2022-12-27T04:29:31.251Z"
+    },
+    {
+      "id": "d8425c8c-3247-4a8e-bf3d-e240eb7c19c4",
+      "pid": "0",
+      "menuname": "工具集合",
+      "icon": "ele-Tools",
+      "path": "/tools",
+      "create_time": "2023-01-01T06:56:56.908Z"
+    },
+    {
+      "id": "d4f9e931-b0ca-4f2e-ac2d-20dee9e9d906",
+      "pid": "0",
+      "menuname": "Excel",
+      "icon": "ele-List",
+      "path": "/excel",
+      "create_time": "2022-12-27T04:30:01.952Z",
+      "children": [
+        {
+          "id": "07749ff9-f80e-47db-bd96-98cc5c839b9d",
+          "pid": "d4f9e931-b0ca-4f2e-ac2d-20dee9e9d906",
+          "menuname": "导入",
+          "icon": "",
+          "path": "/excel/import",
+          "create_time": "2022-12-27T04:30:53.214Z"
+        },
+        {
+          "id": "147c722b-ed96-488d-b9e7-62eaeccc2169",
+          "pid": "d4f9e931-b0ca-4f2e-ac2d-20dee9e9d906",
+          "menuname": "导出",
+          "icon": "",
+          "path": "/excel/export",
+          "create_time": "2022-12-27T04:30:27.743Z"
+        }
+      ]
+    },
+    {
+      "id": "9e0d1118-b6da-4084-8f74-c14da8a86bf4",
+      "pid": "0",
+      "menuname": "图表",
+      "icon": "fa fa-pie-chart",
+      "path": "/chart",
+      "create_time": "2022-12-12T08:34:43.436Z",
+      "children": [
+        {
+          "id": "19152332-2d30-46da-8792-cc47dfbb4aec",
+          "pid": "9e0d1118-b6da-4084-8f74-c14da8a86bf4",
+          "menuname": "中国地图",
+          "icon": "",
+          "path": "/chart/chinaMap",
+          "create_time": "2022-12-12T09:20:12.551Z"
+        },
+        {
+          "id": "3655a70b-c77b-4471-bdde-ced045ff6d60",
+          "pid": "9e0d1118-b6da-4084-8f74-c14da8a86bf4",
+          "menuname": "百度地图",
+          "icon": "",
+          "path": "/chart/baiduMap",
+          "create_time": "2022-12-12T09:20:25.798Z"
+        },
+        {
+          "id": "58addee5-645a-40c7-ac02-e64c98c67654",
+          "pid": "9e0d1118-b6da-4084-8f74-c14da8a86bf4",
+          "menuname": "echarts图表",
+          "icon": "",
+          "path": "/chart/echarts",
+          "create_time": "2022-12-12T09:19:59.079Z"
+        },
+        {
+          "id": "e010a601-ae2c-4dd0-aef6-a87efc7dab8a",
+          "pid": "9e0d1118-b6da-4084-8f74-c14da8a86bf4",
+          "menuname": "高德地图",
+          "icon": "",
+          "path": "/chart/gaodeMap",
+          "create_time": "2022-12-12T09:20:18.879Z"
+        }
+      ]
+    },
+    {
+      "id": "8df4ec2b-a5bb-4c81-a5cd-4ac7a98e9746",
+      "pid": "0",
+      "menuname": "自定义指令",
+      "icon": "fa fa-first-order",
+      "path": "/my-directive",
+      "create_time": "2023-01-05T08:01:05.742Z"
+    },
+    {
+      "id": "6fbb277b-9953-4256-855f-0c586645548a",
+      "pid": "0",
+      "menuname": "多级菜单",
+      "icon": "ele-Menu",
+      "path": "/",
+      "create_time": "2022-12-27T05:11:39.478Z",
+      "children": [
+        {
+          "id": "9a4ce90a-b6d9-4e1f-b584-9373f3a08958",
+          "pid": "6fbb277b-9953-4256-855f-0c586645548a",
+          "menuname": "菜单一",
+          "icon": "",
+          "path": "/",
+          "create_time": "2022-12-27T05:22:18.350Z",
+          "children": [
+            {
+              "id": "000bed36-40f9-4bd2-b020-00c9c1c4420c",
+              "pid": "9a4ce90a-b6d9-4e1f-b584-9373f3a08958",
+              "menuname": "菜单1-2",
+              "icon": "",
+              "path": "/",
+              "create_time": "2022-12-27T05:23:10.690Z"
+            },
+            {
+              "id": "9784c47c-1ebe-4011-8a97-4a79d985f968",
+              "pid": "9a4ce90a-b6d9-4e1f-b584-9373f3a08958",
+              "menuname": "菜单1-1",
+              "icon": "",
+              "path": "/",
+              "create_time": "2022-12-27T05:22:49.305Z"
+            }
+          ]
+        },
+        {
+          "id": "cdee4373-fcfc-4f99-949d-201c637e1700",
+          "pid": "6fbb277b-9953-4256-855f-0c586645548a",
+          "menuname": "菜单二",
+          "icon": "",
+          "path": "/",
+          "create_time": "2022-12-27T05:22:33.161Z"
+        }
+      ]
+    },
+    {
+      "id": "5a2a3435-426d-4525-9b8f-bcc3f7d1d81c",
+      "pid": "0",
+      "menuname": "组件封装",
+      "icon": "fa fa-cube",
+      "path": "/componentsPackage",
+      "create_time": "2023-01-10T03:40:23.316Z",
+      "children": [
+        {
+          "id": "668fcc39-a05e-448b-ab23-a782d8a656a3",
+          "pid": "5a2a3435-426d-4525-9b8f-bcc3f7d1d81c",
+          "menuname": "图标选择器",
+          "icon": "iconfont icon-xuanzeqi",
+          "path": "/componentsPackage/iconPick",
+          "create_time": "2023-01-10T03:43:29.925Z"
+        }
+      ]
+    },
+    {
+      "id": "58fa188e-f3ac-481f-af09-66c7c4b71846",
+      "pid": "0",
+      "menuname": "测试页面",
+      "icon": "fa fa-tripadvisor",
+      "path": "/test",
+      "create_time": "2022-12-28T04:35:09.085Z"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+.line-b1 {
+    span {
+        position: relative;
+        // display: inline-block;
+        margin-bottom: 1px;
+    }
+
+    span::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -20%;
+        width: 100%;
+        height: 2px;
+        background-color: #fc2f70;
+        transform-origin: center;
+        transform: translate(-50%, 0) scaleX(0);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    span:hover::before {
+        transform: translate(-50%, 0) scaleX(1);
+    }
+}
+
+.line-b2 {
+    span {
+        position: relative;
+    }
+
+    span::before {
+        content: '';
+        position: absolute;
+        bottom: -20%;
+        left: 0;
+        right: 0;
+        height: 2px;
+        // background-color: #3cefff;
+        background-color: #fc2f70;
+        transform-origin: bottom right;
+        transform: scaleX(0);
+        transition: transform 0.5s ease;
+    }
+
+    span:hover::before {
+        transform-origin: bottom left;
+        transform: scaleX(1);
+    }
+
+}
+
+//果冻
+.jelly {
+
+    &:hover {
+        // cursor: pointer;
+        animation: jelly 0.5s;
+    }
+
+    @keyframes jelly {
+
+        0%,
+        100% {
+            transform: scale(1, 1);
+        }
+
+        25% {
+            transform: scale(0.9, 1.1);
+        }
+
+        50% {
+            transform: scale(1.1, 0.9);
+        }
+
+        75% {
+            transform: scale(0.95, 1.05);
+        }
+    }
+}
+
+
+
+
+.loading-bg {
+    background-color: var(--el-bg-color);
+    top: 0;
+    opacity: 0.7;
+    // display: flex;
+    justify-items: center;
+    align-items: center;
+    z-index: 99;
+    transition: all 0.5s;
+}
+
+.loading {
+    @extend .loading-1;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: var(--loading);
+}
+
+.loading-1 {
+    @extend .loading-bg;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    .box {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 2em;
+        margin: 0 auto;
+
+        span {
+            width: 0.3em;
+            height: 1em;
+            background-color: #3cefff;
+        }
+
+        span:nth-of-type(1) {
+            animation: grow 1s -0.45s ease-in-out infinite;
+        }
+
+        span:nth-of-type(2) {
+            animation: grow 1s -0.3s ease-in-out infinite;
+        }
+
+        span:nth-of-type(3) {
+            animation: grow 1s -0.15s ease-in-out infinite;
+        }
+
+        span:nth-of-type(4) {
+            animation: grow 1s ease-in-out infinite;
+        }
+
+        @keyframes grow {
+
+            0%,
+            100% {
+                transform: scaleY(1);
+            }
+
+            50% {
+                transform: scaleY(2);
+            }
+        }
+    }
+}
+
+.loading-2 {
+    @extend .loading-bg;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    .balls {
+        width: 4em;
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .balls div {
+        width: 0.8em;
+        height: 0.8em;
+        border-radius: 50%;
+        background-color: #fc2f70;
+    }
+
+    .balls div:nth-of-type(1) {
+        transform: translateX(-100%);
+        animation: left-swing 0.5s ease-in alternate infinite;
+    }
+
+    .balls div:nth-of-type(3) {
+        transform: translateX(-95%);
+        animation: right-swing 0.5s ease-out alternate infinite;
+    }
+
+    @keyframes left-swing {
+
+        50%,
+        100% {
+            transform: translateX(95%);
+        }
+    }
+
+    @keyframes right-swing {
+        50% {
+            transform: translateX(-95%);
+        }
+
+        100% {
+            transform: translateX(100%);
+        }
+    }
+}

@@ -1,0 +1,97 @@
+@import 'element-plus/theme-chalk/dark/css-vars.css';
+@import '@/style/var.scss';
+html.dark {
+  background-color: var(--dark-bg);
+  @extend .el-menu-common;
+
+  .el-menu-verticale {
+    .el-menu-item,
+    .el-sub-menu__title {
+      &:hover {
+        font-weight: 500;
+      }
+
+      &.is-active {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+html.light {
+  background-color: var(--light-bg);
+
+  .left-side {
+    background-color: var(--left-side-bg);
+  }
+
+  .el-menu-verticale {
+    .el-menu-item,
+    .el-sub-menu__title {
+      background-color: var(--left-side-bg);
+
+      &:hover {
+        font-weight: 500;
+        background-color: var(--left-side-bg) !important;
+      }
+
+      &.is-active {
+        font-weight: 500;
+
+        &:hover {
+          background-color: var(--left-side-bg) !important;
+        }
+      }
+    }
+
+    background-color: var(--left-side-bg);
+  }
+
+  @extend .el-menu-common;
+}
+
+.el-menu-common {
+  .el-sub-menu__title {
+    &:hover {
+      color: $active_color !important;
+      background-color: transparent !important;
+    }
+
+    &.is-active {
+      color: $active_color !important;
+      background-color: transparent !important;
+    }
+  }
+
+  .el-menu-item {
+    box-sizing: border-box;
+    // opacity: 0.8;
+
+    &:hover {
+      color: $active_color !important;
+      background-color: transparent !important;
+    }
+
+    &.is-active {
+      color: $active_color !important;
+      position: relative;
+      opacity: 1;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 2px;
+        top: 10%;
+        bottom: 0;
+        height: 80%;
+        // width: 3px;
+        border-left: 3px solid var(--el-color-primary);
+      }
+
+      &:hover {
+        color: $active_color !important;
+        background-color: transparent !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+    "extends": "@vue/tsconfig/tsconfig.web.json",
+    "include": [
+        "env.d.ts",
+        "src/**/*",
+        "src/**/*.vue",
+        "types",
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue",
+        "tests/**/*.ts",
+        "tests/**/*.tsx"
+    ],
+    "compilerOptions": {
+        "module": "ESNext",
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ]
+        },
+        "types": [
+            "element-plus/global",
+        ],
+        "lib": [
+            "esnext",
+            "dom",
+            "dom.iterable",
+            "scripthost"
+        ]
+    },
+    "references": [
+        {
+            "path": "./tsconfig.config.json"
+        }
+    ],
+    "type": [
+        "node"
+    ]
+}

@@ -1,0 +1,38 @@
+:root {
+  --el-menu-active-color: #linear-gradient(135deg, #ce9ffc, #7367f0);
+  // 基本颜色变量 红色风
+  --el-color-primary: #00a497;
+  --el-color-primary-light-3: #ec4899;
+  --el-color-primary-light-5: #f472b6;
+  --el-color-primary-light-7: #f9a8d4;
+  --el-color-primary-light-8: #fbcfe8;
+  --el-color-primary-light-9: #fce7f3;
+  --el-color-primary-dark-2: #831843;
+
+  //基本颜色变量 绿色风
+  // --el-color-primary: #65a30d;
+  // --el-color-primary-light-3: #047857;
+  // --el-color-primary-light-5: #059669;
+  // --el-color-primary-light-7: #10b981;
+  // --el-color-primary-light-8: #34d399;
+  // --el-color-primary-light-9: #cffafe;
+  // --el-color-primary-dark-2: #a7f3d0;
+  --loading: none;
+  --dark-bg: #262626;
+  --light-bg: #f7f9f9;
+  --left-side-bg: #343a40;
+}
+
+$darkcolor: var(--dark-bg);
+$color: #f2f2f2;
+$hover_bg: #404040;
+$active_bg: #fdf2f8;
+$active_color: var(--el-color-primary);
+
+:export {
+  $darkcolor: var(--dark-bg);
+  $color: #f2f2f2;
+  $hover_bg: #404040;
+  $active_bg: #fdf2f8;
+  $active_color: var(--el-color-primary);
+}
